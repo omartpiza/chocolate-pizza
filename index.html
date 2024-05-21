@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chocolate Pizza</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400&family=Fenomen+Slab:wght@300&family=Wood+Line+JNL:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="logo.png" alt="Delicious Logo" id="logo">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Delicious Logo" id="logo">
+                <div class="logo-text">
+                    <p class="delicius-text">Delicius</p>
+                    <p>THE BEST FOOD BLOG ON THE WEB</p>
+                </div>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#"><img src="fb-icon.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="twit-icon.png" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="gp-icon.png" alt="Google Plus"></a></li>
-                    <li><a href="#"><img src="insta-icon.png" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="flic-icon.png" alt="Flickr"></a></li>
-                    <li><a href="#"><img src="pint-icon.png" alt="Pinterest"></a></li>
-                    <li><a href="#"><img src="rss-icon.png" alt="RSS"></a></li>
-                    <li><a href="#"><img src="mail-icon.png" alt="Mail"></a></li>
+                    <li><a href="#"><img src="img/fb-icon.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="img/twit-icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="img/gp-icon.png" alt="Google Plus"></a></li>
+                    <li><a href="#"><img src="img/insta-icon.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="img/flic-icon.png" alt="Flickr"></a></li>
+                    <li><a href="#"><img src="img/pint-icon.png" alt="Pinterest"></a></li>
+                    <li><a href="#"><img src="img/rss-icon.png" alt="RSS"></a></li>
+                    <li><a href="#"><img src="img/mail-icon.png" alt="Mail"></a></li>
                 </ul>
             </nav>
         </div>
@@ -29,7 +38,7 @@
         <article>
             <h1>Chocolate Pizza</h1>
             <p class="date">POSTED ON 15 DEC 2013 / DESSERTS</p>
-            <img src="choco-pizza.png" alt="Chocolate Pizza" class="main-image">
+            <img src="img/choco-pizza.png" alt="Chocolate Pizza" class="main-image">
             
             <section class="recipe">
                 <p>
@@ -45,34 +54,40 @@
 
             <section class="ingredients">
                 <ul>
-                    <li><input type="checkbox"> 1 1/2 cups milk</li>
-                    <li><input type="checkbox"> 1/2 cup mascarpone</li>
-                    <li><input type="checkbox"> 1/2 tsp pink salt</li>
-                    <li><input type="checkbox"> 1 lb Black Mission Figs</li>
-                    <li><input type="checkbox"> 1/2 cup brown sugar</li>
-                    <li><input type="checkbox"> 2-4 tbsp water</li>
-                    <li><input type="checkbox"> 1 1/2 cups heavy cream</li>
-                    <li><input type="checkbox"> 2 egg yolks</li>
-                    <li><input type="checkbox"> 1 lemon, juiced</li>
-                    <li><input type="checkbox"> 2 tbsp butter</li>
-                    <li><input type="checkbox"> 1 cup honey roasted pecans, roughly chopped</li>
+                    <li><input type="checkbox" id="item1"><label for="item1">1 1/2 cups milk</label></li>
+                    <li><input type="checkbox" id="item2"><label for="item2">1/2 cup mascarpone</label></li>
+                    <li><input type="checkbox" id="item3"><label for="item3">1/2 tsp pink salt</label></li>
+                    <li><input type="checkbox" id="item4"><label for="item4">1 lb Black Mission Figs</label></li>
+                    <li><input type="checkbox" id="item5"><label for="item5">1/2 cup brown sugar</label></li>
+                    <li><input type="checkbox" id="item6"><label for="item6">2-4 tbsp water</label></li>
+                    <li><input type="checkbox" id="item7"><label for="item7">1 1/2 cups heavy cream</label></li>
+                    <li><input type="checkbox" id="item8"><label for="item8">2 egg yolks</label></li>
+                    <li><input type="checkbox" id="item9"><label for="item9">1 lemon, juiced</label></li>
+                    <li><input type="checkbox" id="item10"><label for="item10">2 tbsp butter</label></li>
+                    <li><input type="checkbox" id="item11"><label for="item11">1 cup honey roasted pecans, roughly chopped</label></li>
                 </ul>
             </section>
         </article>
     </main>
     
     <aside>
-        <div class="author">
-            <img src="van-pic.png" alt="Vanessa Stevenson">
-            <p>Vanessa Stevenson</p>
-            <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that’s pretty much who I am.</p>
+        <div class="author-container">
+            <div class="author">
+                <img src="img/van-pic.png" alt="Vanessa Stevenson">
+                <div class="author-info">
+                    <p>Vanessa Stevenson</p>
+                    <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that’s pretty much who I am.</p>
+                </div>
+            </div>
+            <button>SHARE RECIPE</button>
         </div>
-        <button>SHARE RECIPE</button>
     </aside>
 
     <footer>
         <p>Delicious © 2013 • All Rights Reserved.</p>
         <p>Proudly published with Ghost.</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
